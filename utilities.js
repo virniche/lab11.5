@@ -9,7 +9,7 @@ async function fetchData() {
     try {
         let dogUrl = "";
 
-        while (!dogUrl.match(/\.(jpg|jpeg|png|gif)$/i)) {
+        while (!dogUrl.match(/\.(jpg|jpeg|png|gif)$/i)) { /* Gemini helped me figure out how to get multiple different formatted images */
             const response = await fetch("https://random.dog/woof.json");
 
             if (!response.ok) {
@@ -28,9 +28,11 @@ async function fetchData() {
         imageContainer.appendChild(imgElement);
 
         statusText.textContent = "";
+
     } catch (error) {
         console.error(error);
         statusText.textContent = "Failed to load dog. Try again.";
+        
     } finally {
         dogBtn.disabled = false;
     }

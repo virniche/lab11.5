@@ -14,8 +14,8 @@ button:hover:not(:disabled) {
 
 #image-container img {
     width: 100%;
-    max-height: 360px;
-    object-fit: cover;
+    max-height: 80vh;
+    object-fit: contain;
     border-radius: 8px;
     margin-top: 1rem;
 }

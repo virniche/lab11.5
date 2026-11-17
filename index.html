@@ -7,21 +7,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class ="site-header">
-        
+    <main class="container">
+        <section class="card" aria-labelledby="app-heading">
+            <h1 id="app-heading">Random Dog</h1>
+            <button type="button" id="dogButton">Get New Dog</button>
+            <p id="status-text" role="status">Click to see a dog!</p>
+            <div id="image-container"></div>
+        </section>
+    </main>
 
-    </header>
-<main class="container">
-    <section class="card" aria-labelledby="app-heading">
-    <h2 id="app-heading">Random Pup Generator</h2>
-    <button onclick="fetchData()">Get New Dog</button>
-    
-    <div class="image-container">
-        <img id="dog-image" src="" alt="A random dog from the API" class="hidden">
-        <p id="status-text" role="status">Loading dog...</p>
-    </div>
-    </section>
-</main>
-<script src="utilities.js"></script>
+    <script src="utilities.js"></script>
 </body>
 </html>

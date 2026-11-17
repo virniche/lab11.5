@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Dog Viewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class ="site-header">
+        
+
+    </header>
+<main class="container">
+    <section class="card" aria-labelledby="app-heading">
+    <h2 id="app-heading">Random Pup Generator</h2>
+    <button onclick="fetchData()">Get New Dog</button>
+    
+    <div class="image-container">
+        <img id="dog-image" src="" alt="A random dog from the API" class="hidden">
+        <p id="status-text" role="status">Loading dog...</p>
+    </div>
+    </section>
+</main>
+<script src="utilities.js"></script>
+</body>
+</html>
